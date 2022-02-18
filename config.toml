@@ -2,5 +2,5 @@
 version = "1.0.0"
 
 [prepare]
-dependences_file = ""
-workspace = ""
+dependences_file = "https://raw.githubusercontent.com/orelvis15/cvm_config/master/dependences.toml"
+workspace = "/opt/cardano/"
