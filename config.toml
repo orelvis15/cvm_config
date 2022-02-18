@@ -1,0 +1,6 @@
+[general]
+version = "1.0.0"
+
+[prepare]
+dependences_file = ""
+workspace = ""

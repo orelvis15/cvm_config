@@ -1,0 +1,1 @@
+macos = "coreutils gnupg jq libsodium tcptraceroute"
