@@ -2,7 +2,9 @@
 version = "1.0.0"
 
 [prepare]
-dependences_file = "https://raw.githubusercontent.com/orelvis15/cvm_config/master/dependences.toml"
+config_path = "https://raw.githubusercontent.com/orelvis15/cvm_config/master/"
+dependences_file = "dependences.toml"
+install_ghc_file = "install_ghc.sh"
 workspace = "/opt/cardano/"
 haskell_ghc_version = "8.10.7"
 haskell_cabal_version = "3.4.0.0"
