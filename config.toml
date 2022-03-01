@@ -1,7 +1,7 @@
 [general]
 version = "1.0.0"
 
-[prepare]
+[init]
 config_path = "https://raw.githubusercontent.com/orelvis15/cvm_config/master/"
 dependences_file = "dependences.toml"
 install_ghc_file = "install_ghc.sh"
@@ -9,11 +9,125 @@ haskell_ghc_version = "8.10.7"
 haskell_cabal_version = "3.4.0.0"
 
 [workspace]
-path = "/opt/cardano/"
-script_folder = "script"
-files_folder = "files"
-db_folder = "db"
-guild_db_folder = "guild-db"
-sockets_folder = "sockets"
-priv_folder = "sockets"
-tmp_folder = "tmp"
+workspace_folder = "cardano"
+folders = ["script", "files", "db", "guild-db", "sockets", "priv", "tmp", "log"]
+
+# Config files
+
+[[config_file_item]]
+url = "https://hydra.iohk.io/job/Cardano/iohk-nix/cardano-deployment/latest-finished/download/1/{network}-byron-genesis.json"
+name = "byron-genesis.json"
+folder = "files"
+
+[[config_file_item]]
+url = "https://hydra.iohk.io/job/Cardano/iohk-nix/cardano-deployment/latest-finished/download/1/{network}-shelley-genesis.json"
+name = "shelley-genesis.json"
+folder = "files"
+
+[[config_file_item]]
+url = "https://hydra.iohk.io/job/Cardano/iohk-nix/cardano-deployment/latest-finished/download/1/{network}-alonzo-genesis.json"
+name = "alonzo-genesis.json"
+folder = "files"
+
+[[config_file_item]]
+url = "https://hydra.iohk.io/job/Cardano/iohk-nix/cardano-deployment/latest-finished/download/1/{network}-topology.json"
+name = "topology.json"
+folder = "files"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/files/config-{network}.json"
+name = "config.json"
+folder = "files"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/files/config-dbsync.json"
+name = "config-dbsync.json"
+folder = "files"
+
+# Script helpers
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/env"
+name = "env"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/cnode.sh"
+name = "cnode.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/dbsync.sh"
+name = "dbsync.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/cntools.sh"
+name = "cntools.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/cntools.library"
+name = "cntools.library"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/logMonitor.sh"
+name = "logMonitor.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/setup_mon.sh"
+name = "setup_mon.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/topologyUpdater.sh"
+name = "topologyUpdater.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/cabal-build-all.sh"
+name = "cabal-build-all.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/submitapi.sh"
+name = "submitapi.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/ogmios.sh"
+name = "ogmios.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/system-info.sh"
+name = "system-info.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/sLiveView.sh"
+name = "sLiveView.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/gLiveView.sh"
+name = "gLiveView.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/deploy-as-systemd.sh"
+name = "deploy-as-systemd.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/cncli.sh"
+name = "cncli.sh"
+folder = "script"
+
+[[config_file_item]]
+url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/grest-helper-scripts/setup-grest.sh"
+name = "setup-grest.sh"
+folder = "script"
+
