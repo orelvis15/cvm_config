@@ -10,7 +10,10 @@ haskell_cabal_version = "3.4.0.0"
 
 [workspace]
 workspace_folder = "cardano"
-folders = ["script", "files", "db", "guild-db", "sockets", "priv", "tmp", "log"]
+folders = ["script", "files", "db", "guild-db", "sockets", "priv", "tmp", "log", "bin"]
+
+[dependences]
+macos = ["coreutils", "gnupg", "jq", "libsodium", "tcptraceroute"]
 
 # Config files
 
@@ -130,4 +133,3 @@ folder = "script"
 url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/grest-helper-scripts/setup-grest.sh"
 name = "setup-grest.sh"
 folder = "script"
-
