@@ -14,6 +14,11 @@ folders = ["script", "files", "db", "guild-db", "sockets", "priv", "tmp", "log",
 
 [dependences]
 macos = ["coreutils", "gnupg", "jq", "libsodium", "tcptraceroute"]
+debian = ["libpq-dev", "python3", "build-essential", "pkg-config", "libffi-dev", "libgmp-dev", "libssl-dev", "libtinfo-dev", "systemd", "libsystemd-dev", "libsodium-dev", "zlib1g-dev", "make", "g++", "tmux", "git", "jq", "libncursesw5", "gnupg", "aptitude", "libtool", "autoconf", "secure-delete", "iproute2", "bc", "tcptraceroute", "dialog", "automake", "sqlite3", "bsdmainutils", "libusb-1.0-0-dev", "libudev-dev"]
+ubuntu = ["libpq-dev", "python3", "build-essential", "pkg-config", "libffi-dev", "libgmp-dev", "libssl-dev", "libtinfo-dev", "systemd", "libsystemd-dev", "libsodium-dev", "zlib1g-dev", "make", "g++", "tmux", "git", "jq", "libncursesw5", "gnupg", "aptitude", "libtool", "autoconf", "secure-delete", "iproute2", "bc", "tcptraceroute", "dialog", "automake", "sqlite3", "bsdmainutils", "libusb-1.0-0-dev", "libudev-dev"]
+centos = ["python3", "coreutils", "libffi-devel", "gmp-devel", "openssl-devel", "ncurses-libs", "systemd", "systemd-devel", "libsodium-devel", "zlib-devel", "make", "gcc-c++", "tmux", "git", "jq", "gnupg2", "libtool", "autoconf", "iproute", "bc", "traceroute", "dialog", "sqlite", "util-linux", "xz"]
+fedora = ["python3", "coreutils", "libffi-devel", "gmp-devel", "openssl-devel", "ncurses-libs", "systemd", "systemd-devel", "libsodium-devel", "zlib-devel", "make", "gcc-c++", "tmux", "git", "jq", "gnupg2", "libtool", "autoconf", "iproute", "bc", "traceroute", "dialog", "sqlite", "util-linux", "xz"]
+rhel = ["python3", "coreutils", "libffi-devel", "gmp-devel", "openssl-devel", "ncurses-libs", "systemd", "systemd-devel", "libsodium-devel", "zlib-devel", "make", "gcc-c++", "tmux", "git", "jq", "gnupg2", "libtool", "autoconf", "iproute", "bc", "traceroute", "dialog", "sqlite", "util-linux", "xz"]
 
 # Config files
 
@@ -133,3 +138,4 @@ folder = "script"
 url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/grest-helper-scripts/setup-grest.sh"
 name = "setup-grest.sh"
 folder = "script"
+
