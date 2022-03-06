@@ -12,7 +12,7 @@ haskell_cabal_version = "3.6.2.0"
 workspace_folder = "cardano"
 folders = ["script", "files", "db", "guild-db", "sockets", "priv", "tmp", "log", "bin"]
 
-[dependences]
+[dependencies]
 macos = ["coreutils", "gnupg", "jq", "libsodium", "tcptraceroute"]
 debian = ["libpq-dev", "python3", "build-essential", "pkg-config", "libffi-dev", "libgmp-dev", "libssl-dev", "libtinfo-dev", "systemd", "libsystemd-dev", "libsodium-dev", "zlib1g-dev", "make", "g++", "tmux", "git", "jq", "libncursesw5", "gnupg", "aptitude", "libtool", "autoconf", "secure-delete", "iproute2", "bc", "tcptraceroute", "dialog", "automake", "sqlite3", "bsdmainutils", "libusb-1.0-0-dev", "libudev-dev", "curl"]
 ubuntu = ["libpq-dev", "python3", "build-essential", "pkg-config", "libffi-dev", "libgmp-dev", "libssl-dev", "libtinfo-dev", "systemd", "libsystemd-dev", "libsodium-dev", "zlib1g-dev", "make", "g++", "tmux", "git", "jq", "libncursesw5", "gnupg", "aptitude", "libtool", "autoconf", "secure-delete", "iproute2", "bc", "tcptraceroute", "dialog", "automake", "sqlite3", "bsdmainutils", "libusb-1.0-0-dev", "libudev-dev", "curl", "unzip"]
