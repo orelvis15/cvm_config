@@ -4,6 +4,7 @@ version = "1.0.0"
 [init]
 config_path = "https://raw.githubusercontent.com/orelvis15/cvm_config/master/"
 ghcup_path = "https://get-ghcup.haskell.org"
+libsodium_path = "https://github.com/input-output-hk/libsodium"
 install_ghc_file = "install_ghc"
 haskell_ghc_version = "8.10.7"
 haskell_cabal_version = "3.6.2.0"
