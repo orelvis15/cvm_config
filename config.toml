@@ -4,7 +4,7 @@ version = "1.0.0"
 [init]
 config_path = "https://raw.githubusercontent.com/orelvis15/cvm_config/master/"
 ghcup_path = "https://get-ghcup.haskell.org"
-libsodium_path = "https://github.com/input-output-hk/libsodium"
+libsodium_path = "https://github.com/input-output-hk/libsodium.git"
 libsodium_commit = "66f017f1"
 install_ghc_file = "install_ghc"
 haskell_ghc_version = "8.10.7"
@@ -25,6 +25,9 @@ rhel = ["python3", "coreutils", "libffi-devel", "gmp-devel", "openssl-devel", "n
 rhel_7 = ["libusb", "pkconfig", "srm"]
 rhel_8 = ["libusbx", "ncurses-compat-libs", "pkgconf-pkg-config"]
 fedora = ["python3", "coreutils", "libffi-devel", "gmp-devel", "openssl-devel", "ncurses-libs", "systemd", "systemd-devel", "libsodium-devel", "zlib-devel", "make", "gcc-c++", "tmux", "git", "jq", "gnupg2", "libtool", "autoconf", "iproute", "bc", "traceroute", "dialog", "sqlite", "util-linux", "xz", "libusbx", "ncurses-compat-libs", "pkgconf-pkg-config", "srm", "curl"]
+
+[build_cardano_node]
+cnode_repostory = "https://github.com/input-output-hk/cardano-node.git"
 
 # Config files
 
