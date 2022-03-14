@@ -28,6 +28,7 @@ fedora = ["python3", "coreutils", "libffi-devel", "gmp-devel", "openssl-devel", 
 
 [build_cardano_node]
 cnode_repository = "https://github.com/input-output-hk/cardano-node.git"
+cnode_release = "https://api.github.com/repos/input-output-hk/cardano-node/releases/latest"
 
 # Config files
 
