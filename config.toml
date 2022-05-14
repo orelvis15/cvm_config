@@ -1,5 +1,6 @@
 [general]
 version = "1.0.0"
+last_cvm_version = "0.0.1"
 
 [init]
 config_path = "https://raw.githubusercontent.com/orelvis15/cvm_config/master/"
