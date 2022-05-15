@@ -3,6 +3,7 @@ version = "1.0.0"
 last_cvm_version = "0.0.2"
 
 [init]
+git_assets = "https://github.com/orelvis15/cvm/releases/download/"
 config_path = "https://raw.githubusercontent.com/orelvis15/cvm_config/master/"
 ghcup_path = "https://get-ghcup.haskell.org"
 libsodium_repository = "https://github.com/input-output-hk/libsodium.git"
