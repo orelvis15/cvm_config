@@ -1,6 +1,6 @@
 [general]
 version = "1.0.0"
-last_cvm_version = "0.0.2"
+last_cvm_version = "0.0.1"
 
 [init]
 git_assets = "https://github.com/orelvis15/cvm/releases/download"
