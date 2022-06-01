@@ -12,9 +12,6 @@ install_ghc_file = "install_ghc"
 haskell_ghc_version = "8.10.7"
 haskell_cabal_version = "3.6.2.0"
 
-[workspace]
-workspace_folder = "cardano"
-
 [dependencies]
 macos = ["coreutils", "gnupg", "jq", "libsodium", "tcptraceroute"]
 debian = ["libpq-dev", "python3", "build-essential", "pkg-config", "libffi-dev", "libgmp-dev", "libssl-dev", "libtinfo-dev", "systemd", "libsystemd-dev", "libsodium-dev", "zlib1g-dev", "make", "g++", "tmux", "git", "jq", "libncursesw5", "gnupg", "aptitude", "libtool", "autoconf", "secure-delete", "iproute2", "bc", "tcptraceroute", "dialog", "automake", "sqlite3", "bsdmainutils", "libusb-1.0-0-dev", "libudev-dev", "curl"]
@@ -34,44 +31,59 @@ cnode_release = "https://api.github.com/repos/input-output-hk/cardano-node/relea
 # Folder Structure
 
 [[structure_folder_item]]
+key = "ROOT"
+name = "cardano"
+path = "parent"
+
+[[structure_folder_item]]
 key = "SCRIPT"
 name = "script"
+path = "."
 
 [[structure_folder_item]]
 key = "FILES"
 name = "files"
+path = "."
 
 [[structure_folder_item]]
 key = "DB"
 name = "db"
+path = "."
 
 [[structure_folder_item]]
 key = "GUILDDB"
 name = "guild-db"
+path = "."
 
 [[structure_folder_item]]
 key = "SOCKETS"
 name = "sockets"
+path = "."
 
 [[structure_folder_item]]
 key = "PRIV"
 name = "priv"
+path = "."
 
 [[structure_folder_item]]
 key = "TMP"
 name = "tmp"
+path = "."
 
 [[structure_folder_item]]
 key = "LOGS"
 name = "logs"
+path = "."
 
 [[structure_folder_item]]
 key = "BIN"
 name = "bin"
+path = "."
 
 [[structure_folder_item]]
 key = "GIT"
 name = "git"
+path = "."
 
 # Config files
 
