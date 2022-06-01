@@ -1,13 +1,23 @@
 [general]
 version = "1.0.0"
+
+[update]
 last_cvm_version = "0.0.1"
+version_pattern = "v{version}"
+name_pattern = "cvm-{arch}.tar.gz"
+file_name = "cvm.tar.gz"
 
 [init]
 git_assets = "https://github.com/orelvis15/cvm/releases/download"
 config_path = "https://raw.githubusercontent.com/orelvis15/cvm_config/master/"
-ghcup_path = "https://get-ghcup.haskell.org"
+ghcup_url = "https://get-ghcup.haskell.org"
+ghcup_bin_path = ".ghcup/bin"
+ghcup_pattern_sed = "s/read /#/g"
 libsodium_repository = "https://github.com/input-output-hk/libsodium.git"
 libsodium_commit = "66f017f1"
+libsodium_folder = "libsodium"
+libsodium_autogen_file = "./autogen.sh"
+libsodium_config_file = "./configure"
 install_ghc_file = "install_ghc"
 haskell_ghc_version = "8.10.7"
 haskell_cabal_version = "3.6.2.0"
@@ -27,6 +37,11 @@ fedora = ["python3", "coreutils", "libffi-devel", "gmp-devel", "openssl-devel", 
 [build_cardano_node]
 cnode_repository = "https://github.com/input-output-hk/cardano-node.git"
 cnode_release = "https://api.github.com/repos/input-output-hk/cardano-node/releases/latest"
+cnode_repository_name = "cardano-node"
+
+[binaries]
+cardano_node = "cardano-node"
+cardano_cli = "cardano-cli"
 
 # Folder Structure
 
@@ -84,6 +99,11 @@ path = "."
 key = "GIT"
 name = "git"
 path = "."
+
+[[structure_folder_item]]
+key = "CURRENT"
+name = "current"
+path = "bin"
 
 # Config files
 
