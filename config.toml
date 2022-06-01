@@ -14,7 +14,6 @@ haskell_cabal_version = "3.6.2.0"
 
 [workspace]
 workspace_folder = "cardano"
-folders = ["script", "files", "db", "guild-db", "sockets", "priv", "tmp", "logs", "bin", "git"]
 
 [dependencies]
 macos = ["coreutils", "gnupg", "jq", "libsodium", "tcptraceroute"]
@@ -31,6 +30,48 @@ fedora = ["python3", "coreutils", "libffi-devel", "gmp-devel", "openssl-devel", 
 [build_cardano_node]
 cnode_repository = "https://github.com/input-output-hk/cardano-node.git"
 cnode_release = "https://api.github.com/repos/input-output-hk/cardano-node/releases/latest"
+
+# Folder Structure
+
+[[structure_folder_item]]
+key = "SCRIPT"
+name = "script"
+
+[[structure_folder_item]]
+key = "FILES"
+name = "files"
+
+[[structure_folder_item]]
+key = "DB"
+name = "db"
+
+[[structure_folder_item]]
+key = "GUILDDB"
+name = "guild-db"
+
+[[structure_folder_item]]
+key = "SOCKETS"
+name = "sockets"
+
+[[structure_folder_item]]
+key = "PRIV"
+name = "priv"
+
+[[structure_folder_item]]
+key = "TMP"
+name = "tmp"
+
+[[structure_folder_item]]
+key = "LOGS"
+name = "logs"
+
+[[structure_folder_item]]
+key = "BIN"
+name = "bin"
+
+[[structure_folder_item]]
+key = "GIT"
+name = "git"
 
 # Config files
 
