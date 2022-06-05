@@ -43,6 +43,34 @@ cnode_repository_name = "cardano-node"
 cardano_node = "cardano-node"
 cardano_cli = "cardano-cli"
 
+
+#Commands
+
+[[command_item]]
+key="INIT"
+name="init"
+enable=true
+
+[[commands_item]]
+key="INSTALL"
+name="install"
+enable=true
+
+[[commands_item]]
+key="USE"
+name="use"
+enable=true
+
+[[commands_item]]
+key="LIST"
+name="list"
+enable=true
+
+[[commands_item]]
+key="UPDATE"
+name="update"
+enable=true
+
 # Folder Structure
 
 [[structure_folder_item]]
