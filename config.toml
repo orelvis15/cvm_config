@@ -46,7 +46,7 @@ cardano_cli = "cardano-cli"
 
 #Commands
 
-[[command_item]]
+[[commands_item]]
 key="INIT"
 name="init"
 enable=true
