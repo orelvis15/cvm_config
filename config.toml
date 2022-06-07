@@ -79,8 +79,8 @@ name = "cardano"
 path = "parent"
 
 [[structure_folder_item]]
-key = "SCRIPT"
-name = "script"
+key = "SCRIPTS"
+name = "scripts"
 path = "."
 
 [[structure_folder_item]]
