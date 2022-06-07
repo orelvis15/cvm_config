@@ -177,7 +177,7 @@ pattern_sed=""
 url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/env"
 name = "env"
 folder_key = "SCRIPT"
-pattern_sed="2,80s|\${HOME}/.cabal/bin|/opt/cardano/bin/current|g;s|/opt/cardano/cnode|/opt/cardano|g;/#CNODE_HOME=/s/^#//g;/#CNODE_PORT=/s/^#//g;/#CONFIG=/s/^#//g;/#SOCKET=/s/^#//g;/#TOPOLOGY=/s/^#//g;/#LOG_DIR=/s/^#//g;/DB_DIR=/s/^#//g;/CNODEBIN=/s/^#//g;/CCLI=/s/^#//g"
+pattern_sed="2,80s|.{HOME}/.cabal/bin|/opt/cardano/bin/current|g;s|/opt/cardano/cnode|/opt/cardano|g;/#CNODE_HOME=/s/^#//g;/#CNODE_PORT=/s/^#//g;/#CONFIG=/s/^#//g;/#SOCKET=/s/^#//g;/#TOPOLOGY=/s/^#//g;/#LOG_DIR=/s/^#//g;/DB_DIR=/s/^#//g;/CNODEBIN=/s/^#//g;/CCLI=/s/^#//g"
 
 [[config_file_item]]
 url = "https://raw.githubusercontent.com/cardano-community/guild-operators/master/scripts/cnode-helper-scripts/cnode.sh"
