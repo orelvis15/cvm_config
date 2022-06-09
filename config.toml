@@ -43,6 +43,10 @@ cnode_repository_name = "cardano-node"
 cardano_node = "cardano-node"
 cardano_cli = "cardano-cli"
 
+[services_item]
+url = "https://raw.githubusercontent.com/orelvis15/cvm_config/master/systemd/"
+file = "cnode.service"
+name = "cnode"
 
 #Commands
 
