@@ -76,6 +76,16 @@ key="UPDATE"
 name="update"
 enable=true
 
+[[commands_item]]
+key="START"
+name="start"
+enable=true
+
+[[commands_item]]
+key="STOP"
+name="stop"
+enable=true
+
 # Folder Structure
 
 [[structure_folder_item]]
