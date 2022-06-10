@@ -81,62 +81,62 @@ enable=true
 [[structure_folder_item]]
 key = "ROOT"
 name = "cardano"
-path = "parent"
+parent = "."
 
 [[structure_folder_item]]
 key = "SCRIPTS"
 name = "scripts"
-path = "."
+parent = "ROOT"
 
 [[structure_folder_item]]
 key = "FILES"
 name = "files"
-path = "."
+parent = "ROOT"
 
 [[structure_folder_item]]
 key = "DB"
 name = "db"
-path = "."
+parent = "ROOT"
 
 [[structure_folder_item]]
 key = "GUILDDB"
 name = "guild-db"
-path = "."
+parent = "ROOT"
 
 [[structure_folder_item]]
 key = "SOCKETS"
 name = "sockets"
-path = "."
+parent = "ROOT"
 
 [[structure_folder_item]]
 key = "PRIV"
 name = "priv"
-path = "."
+parent = "ROOT"
 
 [[structure_folder_item]]
 key = "TMP"
 name = "tmp"
-path = "."
+parent = "ROOT"
 
 [[structure_folder_item]]
 key = "LOGS"
 name = "logs"
-path = "."
+parent = "ROOT"
 
 [[structure_folder_item]]
 key = "BIN"
 name = "bin"
-path = "."
+parent = "ROOT"
 
 [[structure_folder_item]]
 key = "GIT"
 name = "git"
-path = "."
+parent = "ROOT"
 
 [[structure_folder_item]]
 key = "CURRENT"
 name = "current"
-path = "bin"
+parent = "BIN"
 
 # Config files
 
