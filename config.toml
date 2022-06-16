@@ -40,7 +40,7 @@ cnode_release = "https://api.github.com/repos/input-output-hk/cardano-node/relea
 cnode_repository_name = "cardano-node"
 
 [binaries]
-files = ["cardano-node", "cardano-cli"]
+files = ["cardano-node", "cardano-cli", "cardano-submit-api", "cardano-api", "cardano-api-test", "cardano-node-capi", "cardano-topology", "cardano-git-rev", "cardano-node-chairman", "cardano-client-demo", "cardano-testnet", "locli", "trace-dispatcher", "trace-forward", "trace-resources", "tx-generator" ]
 
 #Services items
 
