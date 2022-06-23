@@ -38,6 +38,8 @@ fedora = ["python3", "coreutils", "libffi-devel", "gmp-devel", "openssl-devel", 
 cnode_repository = "https://github.com/input-output-hk/cardano-node.git"
 cnode_release = "https://api.github.com/repos/input-output-hk/cardano-node/releases/latest"
 cnode_repository_name = "cardano-node"
+cnode_ported_libsodium_file_name = "cabal.project.local"
+cnode_ported_libsodium_data = "package cardano-crypto-praos\n  flags: -external-libsodium-vrf"
 
 [binaries]
 files = ["cardano-node", "cardano-cli", "cardano-submit-api", "cardano-api", "cardano-api-test", "cardano-node-capi", "cardano-topology", "cardano-git-rev", "cardano-node-chairman", "cardano-client-demo", "cardano-testnet", "locli", "trace-dispatcher", "trace-forward", "trace-resources", "tx-generator" ]
