@@ -42,8 +42,8 @@ cnode_ported_libsodium_file_name = "cabal.project.local"
 cnode_ported_libsodium_data = "package cardano-crypto-praos\n  flags: -external-libsodium-vrf"
 
 [binaries]
-files = ["cardano-node", "cardano-cli", "cardano-submit-api", "cardano-api", "cardano-api-test", "cardano-node-capi", "cardano-topology", "cardano-git-rev", "cardano-node-chairman", "cardano-client-demo", "cardano-testnet", "locli", "trace-dispatcher", "trace-forward", "trace-resources", "tx-generator" ]
-
+required_files = ["cardano-node", "cardano-cli"]
+others_files = ["cardano-submit-api", "cardano-api", "cardano-api-test", "cardano-node-capi", "cardano-topology", "cardano-git-rev", "cardano-node-chairman", "cardano-client-demo", "cardano-testnet", "locli", "trace-dispatcher", "trace-forward", "trace-resources", "tx-generator" ]
 #Services items
 
 [[services_item]]
