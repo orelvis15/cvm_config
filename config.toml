@@ -44,49 +44,13 @@ cnode_ported_libsodium_data = "package cardano-crypto-praos\n  flags: -external-
 [binaries]
 required_files = ["cardano-node", "cardano-cli"]
 others_files = ["cardano-submit-api", "cardano-api", "cardano-api-test", "cardano-node-capi", "cardano-topology", "cardano-git-rev", "cardano-node-chairman", "cardano-client-demo", "cardano-testnet", "locli", "trace-dispatcher", "trace-forward", "trace-resources", "tx-generator" ]
+
 #Services items
 
 [[services_item]]
 url = "https://raw.githubusercontent.com/orelvis15/cvm_config/master/systemd/"
 file = "cnode.service"
 name = "cnode"
-
-#Commands
-
-[[commands_item]]
-key="INIT"
-name="init"
-enable=true
-
-[[commands_item]]
-key="INSTALL"
-name="install"
-enable=true
-
-[[commands_item]]
-key="USE"
-name="use"
-enable=true
-
-[[commands_item]]
-key="LIST"
-name="list"
-enable=true
-
-[[commands_item]]
-key="UPDATE"
-name="update"
-enable=true
-
-[[commands_item]]
-key="START"
-name="start"
-enable=true
-
-[[commands_item]]
-key="STOP"
-name="stop"
-enable=true
 
 # Folder Structure
 
